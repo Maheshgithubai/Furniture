@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/furniture_image"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/item1" />  <!-- Replace with a placeholder -->
+
+            <ImageView
+                android:id="@+id/like_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/heart2" /> <!-- Replace with your heart icon -->
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#228B22"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/furniture_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arm Chair"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/star"/>
+
+                <TextView
+                    android:id="@+id/furniture_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.0"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/furniture_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs: 10,000"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
